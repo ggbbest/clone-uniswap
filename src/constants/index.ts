@@ -7,8 +7,8 @@ import {
   // , portis, walletconnect, walletlink
 } from '../connectors'
 // 13
-export const ROUTER_ADDRESS = '0xF8cef78E923919054037a1D03662bBD884fF4edf'
-export const FACTORY_ADDRESS = '0x42e2EE7Ba8975c473157634Ac2AF4098190fc741'
+export const ROUTER_ADDRESS = '0x5e82Aff6Da7c57734c301f3398467F7007119c6e'
+export const FACTORY_ADDRESS = '0xE2b953Af0D76fF4a59a43b8C68Ac245883AcF596'
 export const INIT_CODE_HASH = '0x96e8ac4277198ff8b6f785478aa9a39f403cb768dd02cbee326c3e7da348845f'
 // 1337
 // export const ROUTER_ADDRESS = '0x679d1833FE324dcA723e5E7aA53D1a06E5224993'
@@ -39,10 +39,10 @@ export const WBTC = new Token(ChainId.MAINNET, '0x2260FAC5E5542a773Aa44fBCfeDf7C
 
 
 export const ERC20 = [
-  new Token(1337, '0xf0b696D085724a01C23517B2c67564002FaF57d3', 18, 'PKF', 'Polkafoundry'),
-  new Token(1337, '0x93976Bd382C7A66140e7B01D4506e1D757a593BA', 18, 'TEST', 'TEST Coin'),
-  new Token(13, '0xC2Bf5F29a4384b1aB0C063e1c666f02121B6084a', 18, 'PKF', 'Polkafoundry'),
-  new Token(13, '0xBb0CC0fb3e0c06725c67167501f850B4900D6DB5', 18, 'TEA', 'Tea Coin')
+  // new Token(1337, '0xf0b696D085724a01C23517B2c67564002FaF57d3', 18, 'PKF', 'Polkafoundry'),
+  // new Token(1337, '0x93976Bd382C7A66140e7B01D4506e1D757a593BA', 18, 'TEST', 'TEST Coin'),
+  new Token(13, '0xDFEA8Ae8228d89e6a2480f5D24C4100171CfD34e', 18, 'PKF', 'Polkafoundry'),
+  // new Token(13, '0xBb0CC0fb3e0c06725c67167501f850B4900D6DB5', 18, 'TEA', 'Tea Coin')
 ]
 export const fixedPairAddress = '0xBD6DC64A08bE60299Ba17958d8C9fD1423a4409D'
 
@@ -52,7 +52,7 @@ export const WETH_TEST = {
   [ChainId.ROPSTEN]: WETH[ChainId.ROPSTEN],
   [ChainId.GÖRLI]: WETH[ChainId.GÖRLI],
   [ChainId.KOVAN]: WETH[ChainId.KOVAN],
-  13: new Token(13, '0x5c4242beB94dE30b922f57241f1D02f36e906915', 18, 'WETH', 'Wrapped Ether'),
+  13: new Token(13, '0x3d1B3993f7ecDC2Dd0BA87C4Bb0EcbdF0e11E055', 18, 'WETH', 'Wrapped Ether'),
   1337: new Token(1337, '0x72c6d57A055B24903Ae4E4cB0Da060e1c010E456', 18, 'WETH9', 'Wrapped Ether')
 }
 
