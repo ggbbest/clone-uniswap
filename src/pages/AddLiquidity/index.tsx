@@ -169,14 +169,15 @@ export default function AddLiquidity({
             account?.toString(),
             deadline.toHexString()
         ).encodeABI(),
-        value: (10 ** 18).toString(),
+        value: tokenAisEther ? amountsMin[Field.CURRENCY_A].toString() : amountsMin[Field.CURRENCY_B].toString(),
         gasPrice: '0x01',
         gas: gasLimit,
-      }).on('transactionHash', (transactionHash) => {
+      }).then((receipt: any) => {
+        console.log(receipt)
         setAttemptingTxn(false)
-        setTxHash(transactionHash)
-      }).on('error', (err) => {
-        console.error(err)
+        setTxHash(receipt.transactionHash)
+      }).catch((error: any) => {
+        console.error(error)
       })
     } else {
       web3.eth.sendTransaction({
