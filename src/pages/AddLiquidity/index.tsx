@@ -164,13 +164,13 @@ export default function AddLiquidity({
         data: await routerContract.methods.addLiquidityETH(
             tokenAisEther ? wrappedCurrency(currencyB, chainId)?.address : wrappedCurrency(currencyA, chainId)?.address,
             tokenAisEther ? parsedAmountB.raw.toString() : parsedAmountA.raw.toString(),
-            tokenAisEther ? amountsMin[Field.CURRENCY_B].toString() : amountsMin[Field.CURRENCY_A].toString(),
-            tokenAisEther ? amountsMin[Field.CURRENCY_A].toString() : amountsMin[Field.CURRENCY_B].toString(),
+            0,
+            0,
             account?.toString(),
             deadline.toHexString()
         ).encodeABI(),
         value: tokenAisEther ? amountsMin[Field.CURRENCY_A].toString() : amountsMin[Field.CURRENCY_B].toString(),
-        gasPrice: '0x01',
+        gasPrice: '0x00',
         gas: gasLimit,
       }).then((receipt: any) => {
         console.log(receipt)

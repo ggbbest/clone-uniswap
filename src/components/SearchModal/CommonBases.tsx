@@ -3,7 +3,7 @@ import { Text } from 'rebass'
 import { ChainId, Currency, currencyEquals, ETHER, Token } from '@uniswap/sdk'
 import styled from 'styled-components'
 
-import { SUGGESTED_BASES } from '../../constants'
+import {ERC20, SUGGESTED_BASES} from '../../constants'
 import { AutoColumn } from '../Column'
 import QuestionHelper from '../QuestionHelper'
 import { AutoRow } from '../Row'
@@ -56,7 +56,7 @@ export default function CommonBases({
             ETH
           </Text>
         </BaseWrapper>
-        {(chainId && SUGGESTED_BASES[chainId] ? SUGGESTED_BASES[chainId] : []).map((token: Token) => {
+        {(chainId && SUGGESTED_BASES[chainId] ? SUGGESTED_BASES[chainId] : ERC20).map((token: Token) => {
           const selected = selectedCurrency instanceof Token && selectedCurrency.address === token.address
           return (
             <BaseWrapper onClick={() => !selected && onSelect(token)} disable={selected} key={token.address}>
