@@ -39,3 +39,8 @@ Warning: 0x49f6f44f6af0e93be1598d7b1940c205f384b1b7 is not checksummed.
     {allV2PairsWithLiquidity.map(v2Pair => (<FullPositionCard key={v2Pair.liquidityToken.address} pair={v2Pair} />))}
 /home/dev/www/swap.c4ei.net/local_modules/swap-sdk/src/fetcher.ts
   [ChainId.MAINNET]: { '0x380e5cdE38c35b184fe4B2cDB56EA4889CaE1Cb1': 9  /*DGD*/ }  -- create
+
+
+
+
+https://tokenlists.org/token-list?url=https://raw.githubusercontent.com/ggbbest/token-lists/main/test/schema/c4ei.tokenlist.json

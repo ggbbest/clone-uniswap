@@ -117,7 +117,7 @@ export default function PoolCard({ stakingInfo }: { stakingInfo: StakingInfo }) 
           {currency0.symbol}-{currency1.symbol}
         </TYPE.white>
 
-        <StyledInternalLink to={`/pkf/${currencyId(currency0)}/${currencyId(currency1)}`} style={{ width: '100%' }}>
+        <StyledInternalLink to={`/WC4EI/${currencyId(currency0)}/${currencyId(currency1)}`} style={{ width: '100%' }}>
           <ButtonPrimary padding="8px" borderRadius="8px">
             {isStaking ? 'Manage' : 'Deposit'}
           </ButtonPrimary>
@@ -140,8 +140,8 @@ export default function PoolCard({ stakingInfo }: { stakingInfo: StakingInfo }) 
               ? stakingInfo.active
                 ? `${stakingInfo.totalRewardRate
                     ?.multiply(BIG_INT_SECONDS_IN_WEEK)
-                    ?.toFixed(0, { groupSeparator: ',' })} PKF / week`
-                : '0 PKF / week'
+                    ?.toFixed(0, { groupSeparator: ',' })} WC4EI / week`
+                : '0 WC4EI / week'
               : '-'}
           </TYPE.white>
         </RowBetween>
@@ -163,8 +163,8 @@ export default function PoolCard({ stakingInfo }: { stakingInfo: StakingInfo }) 
                 ? stakingInfo.active
                   ? `${stakingInfo.rewardRate
                       ?.multiply(BIG_INT_SECONDS_IN_WEEK)
-                      ?.toSignificant(4, { groupSeparator: ',' })} PKF / week`
-                  : '0 PKF / week'
+                      ?.toSignificant(4, { groupSeparator: ',' })} WC4EI / week`
+                  : '0 WC4EI / week'
                 : '-'}
             </TYPE.black>
           </BottomSection>

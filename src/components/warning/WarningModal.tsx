@@ -63,8 +63,8 @@ export default function WarningModal({isOpen, onClose}: ModalProps) {
           <CloseColor/>
         </CloseIcon>
         <Title>
-          <Paragraph>C4EI is an Uniswap clone on <Link href="https://swap.c4ei.net/" title="c4ei"/> testnet.</Paragraph>
-          <Paragraph style={{fontSize: '16px'}}>Currently, it support only ETH-PKF pair.</Paragraph>
+          <Paragraph>C4EI is an Uniswap clone on <Link href="https://swap.c4ei.net/" title="c4ei"/></Paragraph>
+          <Paragraph style={{fontSize: '16px'}}>Currently, it support only ETH-WC4EI pair.</Paragraph>
         </Title>
         <Subtitle>
           You will have to setup MetaMask's Custom RPC before using C4EI. From the MetaMask's 'Networks' dropdown, choose 'Custom RPC' and input the following info:

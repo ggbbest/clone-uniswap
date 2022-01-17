@@ -351,8 +351,8 @@ export default function Header() {
           >
             {t('pool')}
           </StyledNavLink>
-          {/*<StyledNavLink id={`stake-nav-link`} to={'/pkf'}>*/}
-          {/*  PKF*/}
+          {/*<StyledNavLink id={`stake-nav-link`} to={'/WC4EI'}>*/}
+          {/*  WC4EI*/}
           {/*</StyledNavLink>*/}
           {/*<StyledNavLink id={`stake-nav-link`} to={'/vote'}>*/}
           {/*  Vote*/}
