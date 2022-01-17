@@ -41,10 +41,10 @@ export const WBTC = new Token(ChainId.MAINNET, '0x2260FAC5E5542a773Aa44fBCfeDf7C
 export const ERC20 = [
   // new Token(1337, '0xf0b696D085724a01C23517B2c67564002FaF57d3', 18, 'PKF', 'Polkafoundry'),
   // new Token(1337, '0x93976Bd382C7A66140e7B01D4506e1D757a593BA', 18, 'TEST', 'TEST Coin'),
-  new Token(13, '0xDFEA8Ae8228d89e6a2480f5D24C4100171CfD34e', 18, 'PKF', 'Polkafoundry'),
+  new Token(21004, '0x9E63f92c2D1F3826111846bAd89210293C7F4060', 18, 'WC4EI', 'Wrap C4EI'),
   // new Token(13, '0xBb0CC0fb3e0c06725c67167501f850B4900D6DB5', 18, 'TEA', 'Tea Coin')
 ]
-export const fixedPairAddress = '0xBD6DC64A08bE60299Ba17958d8C9fD1423a4409D'
+export const fixedPairAddress = '0x0baEE3029DEBFcF63aE172460ECDeCdF72FcC047'
 
 export const WETH_TEST = {
   [ChainId.MAINNET]: WETH[ChainId.MAINNET],
@@ -52,7 +52,7 @@ export const WETH_TEST = {
   [ChainId.ROPSTEN]: WETH[ChainId.ROPSTEN],
   [ChainId.GÖRLI]: WETH[ChainId.GÖRLI],
   [ChainId.KOVAN]: WETH[ChainId.KOVAN],
-  13: new Token(13, '0x3d1B3993f7ecDC2Dd0BA87C4Bb0EcbdF0e11E055', 18, 'WETH', 'Wrapped Ether'),
+  21004: new Token(21004, '0xc3B12E8d7FAa4e98001D97a2BC7342B9A959a159', 18, 'WETH', 'Wrapped Ether'),
   1337: new Token(1337, '0x72c6d57A055B24903Ae4E4cB0Da060e1c010E456', 18, 'WETH9', 'Wrapped Ether')
 }
 

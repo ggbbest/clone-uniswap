@@ -117,8 +117,8 @@ export function useMulticallContract(): Contract | null {
   let address = ZERO_ADDRESS
   if(chainId && MULTICALL_NETWORKS[chainId]) {
     address = MULTICALL_NETWORKS[chainId]
-  } else if (chainId === 13) {
-    address = MULTICALL_TEST[13]
+  } else if (chainId === 21004) {
+    address = MULTICALL_TEST[21004]
   } else if (chainId === 1337) {
     address = MULTICALL_TEST[1337]
   }

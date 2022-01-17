@@ -1,0 +1,41 @@
+ENSDEPLOYER AT 0x4b976Fe5dd9dB874e4203e8c55e86c80A5a57aBC (BLOCKCHAIN)
+ADDR_LABEL: bytes32: 0xe5e14487b78f85faa6e1808e89246cf57dd34831548ff2e6097380d98db2504a
+ens : address: 0xF42A80A870fF1AC7eE93A71c4E17684c775C9996
+fifsRegistrar : address: 0x0B1923A115A854EE5233D47c737b45F045D5E9F6
+publicResolver: address: 0x7b703097FB728EeA5579E2091e97D6eAff231F9b
+RESOLVER_LABEL: bytes32: 0x329539a1d23af1810c48a07fe7fc66a3b34fbc8b37e9b3cdb97bb88ceab7e4bf
+REVERSE_REGISTRAR_LABEL: bytes32: 0xdec08c9dbbdd0890e300eb5062089b2d4b1c40e3673bbccb5423f7b37dcf9a9c
+reverseRegistrar: address: 0x8C9007B59B4E2F69491249336e6c2CD115b9e8Fa
+TLD_LABEL: bytes32: 0x4f5b812789fc606be1b3b16908db13fc7a9adf7ca72641f84d75b47069d3d7f0
+
+/src/utils/resolveENSContentHash.ts
+resolverContract(resolverAddress: string, provider: Provider)
+resolveENSContentHash(ensName: string, provider: Provider)
+
+address: "0x0baEE3029DEBFcF63aE172460ECDeCdF72FcC047"
+callData: "0x06f2bf6200000000000000000000000058a3f3237ac6dd279702f2ec02c36ab536ff08e1"
+
+
+0x031e26c2b02a114827e4bc3122474366b5e1897a8637e5aecbaf418e1ebdcfbd
+############################################################
+###### FACTORY 
+"address": "0x0baEE3029DEBFcF63aE172460ECDeCdF72FcC047",
+"transactionHash": "0x031e26c2b02a114827e4bc3122474366b5e1897a8637e5aecbaf418e1ebdcfbd"
+############################################################
+
+###### ROUTER ? 
+> transaction hash:    0x8a4ec716e985fdef44b0ae3b1d4a6bb603bf887370c71a15285fccedb9aa5202
+> contract address:    0x395A3BE5A29e45f534d24C796dDd2F98eE1aE197  --> 0x96E778B2D78A954e271578eC4Ffa8dfc1Cd7d8e0
+Arg [0] : _factory (address): 0x9deb29c9a4c7a88a3c0257393b7f3335338d9a9d --> 0x0baEE3029DEBFcF63aE172460ECDeCdF72FcC047
+Arg [1] : _WETH (address): 0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2  --> 0xc3B12E8d7FAa4e98001D97a2BC7342B9A959a159
+
+react_devtools_backend.js:4045 
+Warning: 0x58a3f3237ac6dd279702f2ec02c36ab536ff08e1 is not checksummed.
+Warning: 0x1d187bbecef8d7b1731339c301ab8354d4f0a50b is not checksummed
+Warning: 0x49f6f44f6af0e93be1598d7b1940c205f384b1b7 is not checksummed.
+
+
+/swap.c4ei.net/src/pages/Pool/index.tsx
+    {allV2PairsWithLiquidity.map(v2Pair => (<FullPositionCard key={v2Pair.liquidityToken.address} pair={v2Pair} />))}
+/home/dev/www/swap.c4ei.net/local_modules/swap-sdk/src/fetcher.ts
+  [ChainId.MAINNET]: { '0x380e5cdE38c35b184fe4B2cDB56EA4889CaE1Cb1': 9  /*DGD*/ }  -- create

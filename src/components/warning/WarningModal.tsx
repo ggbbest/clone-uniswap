@@ -63,16 +63,16 @@ export default function WarningModal({isOpen, onClose}: ModalProps) {
           <CloseColor/>
         </CloseIcon>
         <Title>
-          <Paragraph>Polkex is an Uniswap clone on <Link href="https://polkafoundry.com/" title="Polkafoundry"/> testnet.</Paragraph>
+          <Paragraph>C4EI is an Uniswap clone on <Link href="https://swap.c4ei.net/" title="c4ei"/> testnet.</Paragraph>
           <Paragraph style={{fontSize: '16px'}}>Currently, it support only ETH-PKF pair.</Paragraph>
         </Title>
         <Subtitle>
-          You will have to setup MetaMask's Custom RPC before using Polkex. From the MetaMask's 'Networks' dropdown, choose 'Custom RPC' and input the following info:
+          You will have to setup MetaMask's Custom RPC before using C4EI. From the MetaMask's 'Networks' dropdown, choose 'Custom RPC' and input the following info:
         </Subtitle>
         <ul style={{fontSize: '13.5px', marginTop: '8px'}}>
-          <li>Network name: PolkaFoundry</li>
-          <li>RPC URL: https://halongbay.polkafoundry.com</li>
-          <li>Chain ID: 13</li>
+          <li>Network name: c4ei</li>
+          <li>RPC URL: https://rpc.c4ei.net</li>
+          <li>Chain ID: 21004</li>
         </ul>
         <Paragraph style={{fontSize: '12px', color: '#747474'}}>Please refer <Link href="" title="here"/> for introduction and further instruction. To get some funds for your trial, please click <Link href="" title="here"/>.</Paragraph>
       </Wrapper>
