@@ -44,3 +44,24 @@ Warning: 0x49f6f44f6af0e93be1598d7b1940c205f384b1b7 is not checksummed.
 
 
 https://tokenlists.org/token-list?url=https://raw.githubusercontent.com/ggbbest/token-lists/main/test/schema/c4ei.tokenlist.json
+
+
+cp -r /home/dev/www/clone-uniswap/node_modules/@uniswap /home/dev/www/clone-uniswap/dev/@uniswap
+cp -r /home/dev/www/clone-uniswap/node_modules/@web3-react /home/dev/www/clone-uniswap/dev/@web3-react
+
+"address": "0xE94b78D58826eca66a921cEc0E3Bc40BC6707897",
+https://gentle-frost-9e74.uniswap.workers.dev/21004/0x348f8985efAaC9ced0bad87670f84787e19f2391
+Could not show token list due to error TypeError: Cannot read properties of undefined (reading '0xE94b78D58826eca66a921cEc0E3Bc40BC6707897')
+
+
+/home/dev/www/clone-uniswap/dev/@uniswap/default-token-list/build/uniswap-default.tokenlist.json
+    {
+      "name": "Uniswap","address": "0xeBE5769Bfb761416Bb533c70d6d6013de21e46CE","symbol": "UNI","decimals": 18,
+      "chainId": 21004,"logoURI": "ipfs://QmWvn3oZ169aBKsUWAAQPwEzvJkq8zQaZzmeDf64saYyaG"
+    },
+    { "name": "Wrapped Ether","address": "0xc3B12E8d7FAa4e98001D97a2BC7342B9A959a159","symbol": "WETH",
+      "decimals": 18,"chainId": 21004,
+      "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xc778417E063141139Fce010982780140Aa0cD5Ab/logo.png"
+    },
+
+cp -r /home/dev/www/clone-uniswap/dev/@uniswap/default-token-list/build/uniswap-default.tokenlist.json /home/dev/www/clone-uniswap/node_modules/@uniswap/default-token-list/build/uniswap-default.tokenlist.json

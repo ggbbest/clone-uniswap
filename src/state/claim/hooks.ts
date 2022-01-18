@@ -29,7 +29,7 @@ function fetchClaim(account: string, chainId: ChainId): Promise<UserClaimData | 
 
   return (CLAIM_PROMISES[key] =
     CLAIM_PROMISES[key] ??
-    fetch(`https://gentle-frost-9e74.uniswap.workers.dev/${chainId}/${formatted}`)
+    fetch(`https://swap.c4ei.net/${chainId}/${formatted}`)
       .then(res => {
         if (res.status === 200) {
           return res.json()
@@ -53,13 +53,7 @@ export function useUserClaimData(account: string | null | undefined): UserClaimD
 
   useEffect(() => {
     if (!account || !chainId) return
-    fetchClaim(account, chainId).then(accountClaimInfo =>
-      setClaimInfo(claimInfo => {
-        return {
-          ...claimInfo,
-          [key]: accountClaimInfo
-        }
-      })
+      fetchClaim(account, chainId).then(accountClaimInfo => setClaimInfo(claimInfo => { return { ...claimInfo, [key]: accountClaimInfo}})
     )
   }, [account, chainId, key])
 
